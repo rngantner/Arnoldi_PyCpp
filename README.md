@@ -55,3 +55,22 @@ In order to be able to load the compiled module on Brutus, the library path must
 >>> arnoldi.arnoldi(A,v,k,V,H)
 ```
 
+## Docstring
+The docstring of the arnoldi function is as follows:
+
+```
+Arnoldi algorithm (Krylov approximation of a matrix)
+    input:
+        A: matrix to approximate
+        v0: initial vector (should be in matrix form)
+        k: number of Krylov steps
+    output:
+        V: matrix (large, N*k) containing the orthogonal vectors
+        H: matrix (small, k*k) containing the Krylov approximation of A
+
+Example:
+    >>> A=rand(10,10); v=rand(10,1)
+    >>> V=zeros((10,5)); H=zeros((6,5))
+    >>> arnoldi(A,v,5,V,H)
+```
+
