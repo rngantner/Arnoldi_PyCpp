@@ -1,0 +1,17 @@
+# temp files
+*.DS_STORE
+*~
+*.backup
+*.swp
+
+# Python
+*.pyc
+
+# C++
+*.o
+*.so
+*.a
+
+# project-specific files
+src/arnoldi
+src/test/results
