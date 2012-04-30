@@ -22,9 +22,9 @@ The following brutus modules must be loaded:
 The Eigen matrix library must be in the current directory (currently, brutus has no global eigen installation)
  * edit the Makefile and uncomment the brutus includes
  * copy an eigen3 directory into the current directory, eg:
-   * ``wget http://bitbucket.org/eigen/eigen/get/3.0.5.tar.gz``
-   * ``tar xvzf 3.0.5.tar.gz``
-   * ``mv eigen-eigen-6e7488e20373 eigen3``
+   wget http://bitbucket.org/eigen/eigen/get/3.0.5.tar.gz
+   tar xvzf 3.0.5.tar.gz
+   mv eigen-eigen-6e7488e20373 eigen3
 
 In order to be able to load the module, the library path must be updated:
 
