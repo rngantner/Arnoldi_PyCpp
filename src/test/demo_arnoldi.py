@@ -71,3 +71,5 @@ if __name__ == '__main__':
         plt.savefig(os.path.join(basedir,'arnolditimings_'+type_to_name[T]+'.pdf'))
         #plt.show()
         plt.close()
+
+
