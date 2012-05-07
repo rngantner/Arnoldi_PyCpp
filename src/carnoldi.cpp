@@ -153,8 +153,7 @@ void arnoldi_py(PyObject* A_in, PyObject* v_in, size_t k, PyObject* V_out, PyObj
 
 namespace bp = boost::python;
 #include "boost/python.hpp"
-BOOST_PYTHON_MODULE(arnoldi) {
-    //bp::scope().attr("__doc__") = "Arnoldi algorithm (Krylov approximation of a matrix)\n    input:\n        A: matrix to approximate\n        v0: initial vector (should be in matrix form)\n        k: number of Krylov steps\n    output:\n        V: matrix (large, N*k) containing the orthogonal vectors\n        H: matrix (small, k*k) containing the Krylov approximation of A";
+BOOST_PYTHON_MODULE(carnoldi) {
     bp::numeric::array::set_module_and_type("numpy", "ndarray");
     
     bp::def("arnoldi", arnoldi_py, "Arnoldi algorithm (Krylov approximation of a matrix)\n    input:\n        A: matrix to approximate\n        v0: initial vector (should be in matrix form)\n        k: number of Krylov steps\n    output:\n        V: matrix (large, N*k) containing the orthogonal vectors\n        H: matrix (small, k*k) containing the Krylov approximation of A\n\nExample:\n    >>> A=rand(10,10); v=rand(10,1)\n    >>> V=zeros((10,5)); H=zeros((6,5))\n    >>> arnoldi(A,v,5,V,H)");

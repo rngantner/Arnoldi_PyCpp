@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 import sys, os
 
 sys.path.append('..')
-import arnoldi as a
+import carnoldi as a
 from pyarnoldi import arnoldi
 
 if __name__ == '__main__':

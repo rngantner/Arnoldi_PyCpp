@@ -27,7 +27,7 @@ BOOSTPYLIBS=/usr/lib
 #BOOSTPYLIBS=/usr/lib # location of libboost_python.so
 #PYLIBS=/usr/lib # ?? not needed ??
 
-modulename=arnoldi
+modulename=carnoldi
 
 all: python prog
  

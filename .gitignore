@@ -13,5 +13,5 @@
 *.a
 
 # project-specific files
-src/arnoldi
+src/carnoldi
 src/test/results

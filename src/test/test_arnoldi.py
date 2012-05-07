@@ -3,7 +3,9 @@
 import time
 from numpy import *
 from numpy.linalg import norm
-import arnoldi as a
+import sys
+sys.path.append('..')
+import carnoldi as a
 from pyarnoldi import arnoldi
 import matplotlib.pyplot as plt
 
